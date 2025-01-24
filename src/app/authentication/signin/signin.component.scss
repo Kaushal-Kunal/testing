@@ -1,0 +1,60 @@
+ion-content {
+    --background: url("../../../assets/icon/bg.jpg");
+
+    h1 {
+        color: #fff;
+        text-align: center;
+        font-size: 35px;
+    }
+    h6 {
+        color: #fff;
+        text-align: center;
+    }
+    ion-button {
+        --background: #8d8686f5;
+        height: 50px;
+        --border-radius: 25px;
+        margin-top: 150px;
+        text-transform: capitalize;
+    }
+    ion-input{
+        --background: #f3efef;
+        --border-radius: 10px;
+        margin-top: 20px;
+        --padding: 0px 10px;
+    }
+    a {
+        color: white;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+    span{
+        color: #fff;
+        text-align: center;
+    }
+    p{
+        display: flex;
+        color: #fff;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .span{
+        color: #d3abab;
+    }
+    ion-col{
+        margin-top: 200px;
+        --background:#fff;
+    }
+    .signup{
+        margin-left:80%;
+        margin-top: -5%;
+    }
+    .pwd{
+        margin-left:63%;
+        margin-top: -5%;
+    }
+    ion-grid{
+        --background:#fff
+    }
+}

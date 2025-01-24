@@ -1,0 +1,19 @@
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+  <h1>
+    Welcome Back
+  </h1>
+  <h6>
+    Login to your account
+  </h6>
+        <ion-input labelPlacement="stacked" placeholder="username" class="ion-padding" [(ngModel)]="username"></ion-input>
+        <ion-input type="password" labelPlacement="stacked" placeholder="password" class="ion-padding" [(ngModel)]="password"></ion-input>
+          <p>Remember me</p><a href="" class="pwd">Forget Password</a>
+          <ion-button expand="block" (click)="onSumit()">Login in</ion-button>
+        <p>Don't have account? <a href="" class="signup">signup</a></p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
