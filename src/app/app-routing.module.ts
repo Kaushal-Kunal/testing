@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { LoginJunctionComponent } from './authentication/login-junction/login-junction.component';
 import { SigninComponent } from './authentication/signin/signin.component';
+import { FbloginComponent } from './authentication/fblogin/fblogin.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,9 @@ const routes: Routes = [
   },
   {
     path: 'signin', component: SigninComponent
+  },
+  {
+    path: 'fblogin', component:FbloginComponent
   },
   {
     path: 'home',

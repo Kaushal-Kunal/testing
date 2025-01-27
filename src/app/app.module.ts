@@ -10,12 +10,14 @@ import { LoginJunctionComponent } from './authentication/login-junction/login-ju
 import { SigninComponent } from './authentication/signin/signin.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { FbloginComponent } from './authentication/fblogin/fblogin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginJunctionComponent,
-    SigninComponent
+    SigninComponent,
+    FbloginComponent
   ],
   imports: [
     BrowserModule,

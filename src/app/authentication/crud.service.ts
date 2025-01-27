@@ -13,4 +13,7 @@ export class CrudService {
   onLogin(data:any){
     return this.http.post(`https://eduaffair.co.in/api/login`,data)
   }
+  getuser(){
+    return this.http.get(`https://eduaffair.co.in/api/allEmployeeList`)
+  }
 }
