@@ -3,6 +3,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { LoginJunctionComponent } from './authentication/login-junction/login-junction.component';
 import { SigninComponent } from './authentication/signin/signin.component';
 import { FbloginComponent } from './authentication/fblogin/fblogin.component';
+import { InstaLoginComponent } from './authentication/insta-login/insta-login.component';
+import { DashboardComponent } from './authentication/dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -18,6 +20,12 @@ const routes: Routes = [
   },
   {
     path: 'fblogin', component:FbloginComponent
+  },
+  {
+    path:'insta-login', component:InstaLoginComponent
+  },
+  {
+    path:'dashboard',component:DashboardComponent
   },
   {
     path: 'home',

@@ -1,19 +1,26 @@
 <ion-content class="ion-padding">
-  <ion-input label="Outline input" label-placement="floating" fill="outline" placeholder="Enter text" [(ngModel)]="username"></ion-input><br>
-  <ion-input label="Outline input" label-placement="floating" fill="outline" placeholder="Enter text" [(ngModel)]="password"></ion-input>
-  <ion-button expand="block" shape="round" (click)="onSubmit()">Login</ion-button>
+  <ion-input label="Outline input" label-placement="floating" fill="outline" placeholder="Enter text"
+    [(ngModel)]="username"></ion-input><br>
+  <ion-input label="Outline input" label-placement="floating" fill="outline" placeholder="Enter text"
+    [(ngModel)]="password"></ion-input>
+  <ion-button expand="block" shape="round" routerLink="/dashboard" (click)="onSubmit()">Login</ion-button>
+  <ion-button expand="block" shape="round" (click)="getdata()">getdata</ion-button>
 </ion-content>
-<ion-button expand="block" shape="round" (click)="getdata()">getdata</ion-button>
+
 <ion-content>
 
 
- <ion-card *ngFor="let emp of empdata">
-  <ion-card-header>
-    <ion-card-title><ion-icon name="person-outline"></ion-icon> {{emp.EmployeeCode}}</ion-card-title>
-    <ion-card-title><ion-icon name="person-outline"></ion-icon> {{emp.EmployeeName}}</ion-card-title>
-    <ion-card-title><ion-icon name="mail-outline"></ion-icon> {{emp.Email }}</ion-card-title>
-    <ion-card-title><ion-icon name="call-outline"></ion-icon> {{emp.MobileNo}}</ion-card-title>
-    <ion-card-title><ion-icon name="person-outline"></ion-icon> {{emp.EmployeeRole}}</ion-card-title>
-  </ion-card-header>
-</ion-card>
+  <ion-card *ngFor="let emp of empdata" class="resume-card">
+    <ion-card-header>
+      <ion-card-title class="resume-header">
+        <img [src]="base_url+emp.Image_url">
+
+      </ion-card-title>
+      <ion-card-title><ion-icon name="person-outline"></ion-icon> {{emp.EmployeeCode}}</ion-card-title>
+      <ion-card-title><ion-icon name="person-outline"></ion-icon> {{emp.EmployeeName}}</ion-card-title>
+      <ion-card-title><ion-icon name="mail-outline"></ion-icon> {{emp.Email }}</ion-card-title>
+      <ion-card-title><ion-icon name="call-outline"></ion-icon> {{emp.MobileNo}}</ion-card-title>
+      <ion-card-title><ion-icon name="person-outline"></ion-icon> {{emp.EmployeeRole}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
 </ion-content>

@@ -11,13 +11,17 @@ import { SigninComponent } from './authentication/signin/signin.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FbloginComponent } from './authentication/fblogin/fblogin.component';
+import { InstaLoginComponent } from './authentication/insta-login/insta-login.component';
+import { DashboardComponent } from './authentication/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginJunctionComponent,
     SigninComponent,
-    FbloginComponent
+    FbloginComponent,
+    InstaLoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
